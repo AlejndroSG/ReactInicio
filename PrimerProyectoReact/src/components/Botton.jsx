@@ -1,9 +1,9 @@
+import css from "./Botton.module.css";
 
-const Botton = (props) => {
-    console.log(props);
+const Botton = ({titulo}) => {
   return (
     <>
-        <button>{props.titulo}</button>
+        <button>{titulo}</button>
     </>
   )
 }
