@@ -1,33 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Botton from "./components/Botton";
+import Contacto from "./components/Contacto";
+import Home from "./components/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // let nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+  
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Home></Home>
+      <Contacto></Contacto>
+      <Botton titulo="mostrar"></Botton>
+      <Botton titulo="eliminar"></Botton>
+      <Botton></Botton>
+      {
+        // nums.map(num =><li key={num}>{num}</li>)
+      }
     </>
   )
 }
