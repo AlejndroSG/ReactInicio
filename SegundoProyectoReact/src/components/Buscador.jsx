@@ -6,7 +6,8 @@ const Buscador = ({traer}) => {
     }
   return (
     <>
-        <input type="text" placeholder='Buscador' onChange={buscar}/>
+      
+        <input type="search" className='form-control' placeholder='Filtrar por título' onChange={buscar}/>
     </>
   )
 }

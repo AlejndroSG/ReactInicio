@@ -14,6 +14,7 @@ const Posts = () => {
   },[]);
 
   const [palabra, setPalabra] = useState("");
+
   const traer = (palabra) =>{
     setPalabra(palabra.toUpperCase());
   }
@@ -42,7 +43,6 @@ const Posts = () => {
           }
         </div>
       </div>
-      
     </>
   )
 }
